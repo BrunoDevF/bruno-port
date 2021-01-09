@@ -1,0 +1,234 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+html,body{
+    height: 100%;
+    background-color: #0C0C0C;
+}
+.clear{
+    clear: both;
+}
+
+div.container{
+    margin: 0 auto;
+    max-width: 1120px;
+    padding: 5px;
+}
+
+nav#menu{
+    padding: 30px 2%;
+}
+nav .container label{
+    font-weight: bold;
+    font-size: 21px;
+    color: #ffff;
+}
+nav .container ul{
+    float: right;
+}
+nav .container ul li{
+    display: inline-block;
+    margin-right: 25px;
+    list-style-type: none;
+}
+nav .container ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+div.content {
+    height: 430px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 220px;
+    padding-bottom: 110px;
+}
+div.content h1{
+    padding-top: 50px;
+    color: white;
+    font-size: 68px;
+}
+.content h1::after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+@keyframes pisca{
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+div.content h1 > b{
+    color: #4BFFA5;
+}
+footer{
+    padding: 18px 0;
+}
+
+
+
+/* resumo */
+div#resumo  {
+    background-color: white;
+    color: #555555;
+    padding: 30px 0;
+    border-bottom: 1px solid #cccccc;
+}
+div#resumo > div.container > h2{
+    font-size: 28px;
+}
+div#resumo > div.container > p{
+    margin-right: 169px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+div#contatos{
+    text-align: center;
+    padding: 60px 0;
+    background-color: white;
+    border-bottom: 1px solid #cccccc;
+}
+div#contatos ul li{
+    padding-right: 30px;
+    font-size: 28px;
+    list-style-type: none;
+    display: inline-block;
+}
+div#contatos ul li a{
+    text-decoration: none;
+    color: #555555;
+}
+div.projetos {
+    background-color: white;
+}
+div.projetos h2{
+    text-align: center;
+    color: #858585;
+}
+.projeto-single{
+    width: 100%;
+    height: 360px;
+    margin: 50px auto;
+}
+.img-lateral{
+    display: inline-block;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+}
+.projeto-single-descricao{
+    color: #555555;
+    /* background-color: cornflowerblue; */
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+    /* padding: 0 2%; */
+    text-align: center;
+    /* border-bottom: 1px solid #cccccc; */
+}
+.projeto-single-descricao h2,p{
+    padding: 10px 10%;
+    text-align: center;
+}
+.img-lateral img{
+    background-size: cover;
+    width: 300px;
+}
+footer{
+    color: white;
+    text-align: center;
+}
+@media (max-width: 1156px){
+    div#resumo > div.container > h2{
+        padding: 0 2%;
+    }
+    div#resumo > div.container > p {
+        padding: 0 2%;
+        text-align: justify;
+        margin-right: 42px;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+}
+@media (min-width: 800px){
+    .projeto-single{
+        width: 70%;
+        /* padding: 0 5%; */
+        /* background-color: brown; */
+    }
+}
+@media (min-width: 725px){
+    div#resumo > div.container > p {
+        padding: 0 2%;
+        text-align: justify;
+        margin-right: 10px;
+    }
+    .img-lateral{
+        display: inline-block;
+        width: 50%;
+        float: left;
+        height: 300px;
+        text-align: center;
+    }
+    .projeto-single-descricao{
+        display: inline-block;
+        width: 49%;
+        height: 255px;
+        text-align: left;
+        border-top: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .projeto-single-descricao h2,p{
+        padding: 10px 0px;
+        text-align: left;
+    }
+}
+@media (max-width: 627px){
+    div#resumo > div.container > p {
+        padding: 0 2%;
+        text-align: justify;
+        margin-right: 10px;
+    }
+    
+}
+@media (max-width: 519px){
+    div#contatos ul li{
+        margin-bottom: 20px;
+        display: block;
+    }
+}
+@media (max-width: 500px){
+    footer{
+        margin-top: 30px;
+    }
+    nav#menu {
+        text-align: center;
+    }
+    nav#menu > .container > ul li{
+        margin-top: 10px;
+        text-align: center;
+    }
+    div.content h1#titulo {
+        font-size: 35px;
+    }
+    div.content {
+        height: 430px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 24px;
+        padding-bottom: 110px;
+    }
+}
